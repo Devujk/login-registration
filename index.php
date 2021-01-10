@@ -7,19 +7,19 @@
     <title>PORTAL</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Kerala Tourism</a>
+          <a class="navbar-brand" href="index.html">Kerala Tourism</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.php">Main Page</a>
+                <a class="nav-link active" aria-current="page" href="history.html">Attractions</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="home.php">Home Page</a>
+                <a class="nav-link" href="pack.html">Packages</a>
               </li>
             </ul>
           </div>
