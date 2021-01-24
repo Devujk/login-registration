@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PACKAGES</title>
 </head>
-<body>
+<body class="mybody">
     <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.php">Kerala Tourism</a>
@@ -19,7 +20,7 @@
                 <a class="nav-link active" aria-current="page" href="history.php">Attractions</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pack.php">Packages</a>
+                <a class="nav-link" href="index.php">Packages</a>
               </li>
             </ul>
           </div>
@@ -47,12 +48,18 @@
                           <td><input type="text" class="form-control"></td>
                       </tr>
                       <tr>
-                          <td><button class="btn btn-success">SEARCH</button></td>
+                          <td><button onclick="searchpack()" class="btn btn-success">SEARCH</button></td>
                       </tr>
                   </table>
               </div>
           </div>
       </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script>
+    function searchpack()
+    {
+      console.log("SEARCH")
+    }
+    </script>
 </body>
 </html>

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTAL</title>
 </head>
-<body>
+<body class="mybody">
     <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.php">Kerala Tourism</a>
@@ -61,14 +62,14 @@
                           <table class="table">
                               <tr>
                                   <td>USERNAME</td>
-                                  <td><input type="text" class="form-control"></td>
+                                  <td><input id="uname" type="text" class="form-control"></td>
                               </tr>
                               <tr>
                                   <td>PASSWORD</td>
-                                  <td><input type="text" class="form-control"></td>
+                                  <td><input id="pswd" type="text" class="form-control"></td>
                               </tr>
                               <tr>
-                                  <td><BUtton class="btn btn-success">LOGIN</BUtton></td>
+                                  <td><button onClick="login()" class="btn btn-success">LOGIN</button></td>
                               </tr>
                           </table>
                     </div>
@@ -77,34 +78,34 @@
                           <table class="table">
                               <tr>
                                   <td>NAME</td>
-                                  <td><input type="text" class="form-control"></td>
+                                  <td><input id="name" type="text" class="form-control"></td>
                               </tr>
                               <tr>
                                   <td>ADDRESS</td>
-                                  <td><input type="text" class="form-control"></td>
+                                  <td><input id="address" type="text" class="form-control"></td>
                               </tr>
                               <tr>
                                   <td>MAIL ID</td>
-                                  <td><input type="text" class="form-control"></td>
+                                  <td><input id="mail" type="text" class="form-control"></td>
                               </tr>
                               <tr>
                                   <td>PHONE NUMBER</td>
-                                  <td><input type="text" class="form-control"></td>
+                                  <td><input id="pnum" type="text" class="form-control"></td>
                               </tr>
                               <tr>
                                   <td>USERNAME</td>
-                                  <td><input type="text" class="form-control"></td>
+                                  <td><input id="usname" type="text" class="form-control"></td>
                               </tr>
                               <tr>
                                   <td>PASSWORD</td>
-                                  <td><input type="text" class="form-control"></td>
+                                  <td><input id="pswrd" type="text" class="form-control"></td>
                               </tr>
                               <tr>
                                   <td>CONFIRM PASSWORD</td>
-                                  <td><input type="text" class="form-control"></td>
+                                  <td><input id="cpswd" type="text" class="form-control"></td>
                               </tr>
                               <tr>
-                                  <td><Button class="btn btn-success">REGISTER</Button></td>
+                                  <td><Button onclick="register()" class="btn btn-success">REGISTER</Button></td>
                               </tr>
                           </table>
                       </div>
@@ -113,5 +114,26 @@
           </div>
       </div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+      <script>
+        function login()
+        {
+          console.log("LOGIN")
+          var n1=document.getElementById("uname").value 
+          var n2=document.getElementById("pswd").value
+        }
+        
+        function register()
+        {
+          console.log("REGISTER")
+          var n3=document.getElementById("name").value
+          var n4=document.getElementById("address").value
+          var n5=document.getElementById("mail").value
+          var n6=document.getElementById("pnum").value
+          var n7=document.getElementById("usname").value
+          var n8=document.getElementById("pswrd").value
+          var n9=document.getElementById("cpswd").value
+        }
+      </script>
+      
 </body>
 </html>
